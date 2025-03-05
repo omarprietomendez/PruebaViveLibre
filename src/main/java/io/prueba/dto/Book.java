@@ -14,4 +14,10 @@ public class Book {
     private Long pages;
     private String summary;
     private Author author;
+    private Long wordCount;
+
+    @Override
+    public String toString(){
+        return String.valueOf(this.id) + "," + this.getTitle() + "," + this.getAuthor().getName() + "," + String.valueOf(this.pages);
+    }
 }
